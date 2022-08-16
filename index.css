@@ -1,0 +1,47 @@
+body {
+    background-color: beige;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #9b0326;
+    
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav li{
+    margin-right: 30px;
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 10%;
+    
+}
+
+nav li:hover{
+    background-color: #640017;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav img{
+    width: auto;
+    margin: 2%;
+}
+
+.menuButton{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
