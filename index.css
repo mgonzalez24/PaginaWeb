@@ -1,47 +1,52 @@
-body {
-    background-color: beige;
+body {                                     /* termine frustrandome con el css intentando de aplicar mis ideas, preguntar muchas cosas */
+    background-color: white;
     margin: auto;
+    font-family: 'Inter', sans-serif;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    background-color: #9b0326;
-    
-}
-
-.menu ul{
-    display: flex;
-    flex-direction: row;
-
+.navbar-light{
+    background-color: white;    /*nose como llamar a la clase para poder customizar el color especificamente, intente llamando varias clases distintas y estilizando el elemento en html*/
+    border-bottom: solid 1px rgb(234, 234, 234)
 }
 
 nav li{
     margin-right: 30px;
     list-style: none;
-    padding: 10px 20px;
-    border-radius: 10%;
-    
+    padding: 10px 50px;
+    border-bottom: solid 3px transparent;     
 }
 
 nav li:hover{
-    background-color: #640017;
+    border-bottom: solid 3px;
 }
 
 nav a{
     text-decoration: none;
-    color: white;
+    color: black;
     
 }
 
 nav img{
+    height: 60px;
     width: auto;
     margin: 2%;
 }
 
-.menuButton{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
+.main h1{
+    padding: 30px 0px;
+}
+
+.main div:first-child{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.anuncio{
+    width: 50%;
+}
+
+.catalogo-lp{
+    padding-top: 100px;
+    margin-top: 100px;
 }

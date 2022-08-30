@@ -1,93 +1,107 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                     <!-- renove toda la pagina, antes era de la ucema y ahora es un e-commerce de zapatillas -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chanana</title>
+    <title>Tienda Oficial de Lorian</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Bebas+Neue&family=Inter:wght@100;199;200;300;400;500;600;700;800;900&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </head>
 <body>
     <div>
-        <nav class="menu">
-            <img src="./assets/img/logo.png" alt="Logo Ucemmer" height="100px">
-            <div class="menuButton">
-                <ul>
-                    <li><a href="g">Home</a></li>
-                    <li><a href="g">About</a></li>
-                    <li><a href="g">Classes</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./assets/img/branding/Logo Lorian.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATÁLOGO
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./catalogo.html">SNEAKERS</a></li>
+                  <li><a class="dropdown-item" href="./catalogo.html">DE LANA</a></li>
                 </ul>
-            </div>
-        </nav>
-    </div>
-    <section id="main">
-        <div>
-            <h1>UCEMA</h1>
-            <video
-                src="./assets/vid/Nuevas Aulas Híbridas UCEMA- Excelencia y Libertad Responsable.mp4"
-                alt="Aulas Híbridas"
-                controls
-                muted
-                width="500px"
-                type="video/mp4"
-                >Aulas Híbridas
-            </video>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corrupti temporibus iste asperiores velit a nobis aspernatur fugiat iusto, cum quam laboriosam repellendus debitis inventore quae reprehenderit saepe tempora id.
-            </p>
-        </div>
-        <div>
-            <h3>Carreras de grado</h3>
-            <br>
-            <ul>
-                <li>Economía</li>
-                <li>Economía Empresarial</li>
-                <li>Negocios Digitales</li>
-                <li>Analítica de Negocios</li>
-                <li>Administración de Empresas</li>
-                <li>Marketing</li>
-                <li>Finanzas</li>
-                <li>Contador Público</li>
-                <li>Abogacía</li>
-                <li>Ingeniería Informática</li>
-                <li>Ciencias Políticas</li>
-                <li>Relaciones Internacionales</li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./tiendas.html">TIENDAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactanos.html" target="_blank">CONTACTANOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre nosotros.html">SOBRE NOSOTROS</a>
+              </li>
             </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="main">
+        <div>
+            <h1>LORIAN</h1>
+            <video
+                src="./assets/vid/The Chuck Taylor All Star Converse Made by you.mp4"
+                alt="Anuncio Converse"
+                autoplay
+                muted
+                class="anuncio"
+                type="video/mp4"
+                >Anuncio Converse
+            </video>
         </div>
         <div>
-            <h3>Visite nuestra página oficial!</h2>
-                <button 
-                    id="botoncito"
-                    >
-                    <a
-                        href="https://ucema.edu.ar/"
-                        target="_blank"
-                        >
-                        Click aquí     
-                    </a>
-                </button>
-        </div>
-        <div>
-            <h3 id="z4">Contactanos</h3>
-			<form>
-				<p>Introduzca los siguientes datos:</p>
-				<br>
-                <input class="form_input" placeholder="Nombre" type="" name="" required="">
-				<br><br>
-                <input class="form_input" placeholder="Edad" type="number" name="" required="">
-				<br><br>
-                <input class="form_input" placeholder="Email" type="email" name="" required="">
-				<br><br>
-                Fecha de nacimiento: <input class="form_input" type="date" name="" required="">
-				<br><br>
-				<textarea class="form_input" placeholder="Comentarios"></textarea>
-				<br><br>
-                <input type="submit" name="" required="">	
-			</form>
+            <h3>Nuevos Modelos</h3>
+            <div class="model_container snkrs">
+                <div class="card" style="width: 18rem;">
+                  <img src="./assets/img/productos/Nike Air Jordan 1 High Negras.png" class="card-img-top" alt="Foto Sneakers">
+                  <div class="card-body">
+                    <p class="card-text"><b>NIKE AIR JORDAN 1 HIGH NEGRAS</b></p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-info"><a href="./catalogo.html">Ver más</a></button>
+                <button type="button" class="btn btn-primary"><a href="./catalogo.html">Comprar</a></button>              <!-- a compra modelo especifico -->
+            </div>
+            <div class="model_container snkrs">
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/img/productos/Chuck Taylor High Negras.png" class="card-img-top" alt="Foto Lana">
+                <div class="card-body">
+                  <p class="card-text"><b>CONVERSE CHUCK TAYLOR HIGH NEGRAS</b></p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-info"><a href="./catalogo.html">Ver más</a></button>
+                <button type="button" class="btn btn-primary"><a href="">Comprar</a></button>              <!-- a compra modelo especifico -->
+            </div>
         </div>
     </section>
     <footer>
-
+      <section class="footer-top">
+        <div class="redes sociales">
+            <p>NUESTRAS REDES SOCIALES</p>
+            <ul class="list-group">
+              <li class="list-group-item-primary"><a href="https://www.instagram.com/nike/" target="_blank"><img src="./assets/img/branding/instagram (2).png" alt="Instagram"></a></li>
+              <li class="list-group-item-primary"><a href="https://www.tiktok.com/@puma?lang=es" target="_blank"><img src="./assets/img/branding/tiktok.png" alt="Tiktok"></a></li>
+              <li class="list-group-item-primary"><a href="https://es-la.facebook.com/adidasAR/" target="_blank"><img src="./assets/img/branding/facebook (1).png" alt="Facebook"></a></li>
+            </ul>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="legal">
+          <ul class="list-group">
+            <li class="list-group-item-secondary">© 2022 Lorian. Todos los derechos reservados.</li>
+            <li class="list-group-item-secondary"><a href="https://agreementservice.svs.nike.com/ar/es_la/rest/agreement?agreementType=termsOfUse&uxId=com.nike.commerce.nikedotcom.web&country=AR&language=es&requestType=redirect">Términos y Condiciones</a></li>        <!-- use de ejemplo paginas de nike solo con texto legal -->
+            <li class="list-group-item-secondary"><a href="https://agreementservice.svs.nike.com/ar/es_la/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.commerce.nikedotcom.web&country=AR&language=es&requestType=redirect">Política de Privacidad</a></li>
+          </ul>
+      </div>
+      </section>
     </footer>
 </body>
 </html>
