@@ -1,4 +1,3 @@
-/* INDEX */
 body {                                     
     background-color: white;
     margin: auto;
@@ -150,57 +149,4 @@ footer a:hover{
 footer span{
     color: rgb(66, 66, 66);
     font-size: 10px;
-}
-
-/* TIENDAS */
-
-.tiendas{
-    margin: 20px auto;
-    width: 80%;
-}
-
-.tiendas h3{
-    margin: 0px 0px 20px;
-}
-
-/* SOBRE NOSOTROS */
-
-.quienes-somos{
-    margin: 20px auto;
-    width: 80%;
-}
-
-.quienes-somos article{
-    padding: 30px 0;
-}
-
-/* CONTACTANOS */
-
-.formulario-container{
-    margin: 20px auto;
-    width: 80%;
-}
-
-.formulario-container h3, h4{
-    padding: 10px 0;
-}
-
-.form-check{
-    padding: 10px 0;
-}
-
-.form-check-input{
-    min-height: 20px;
-    min-width: 20px;
-}
-
-/* CATÁLOGO */
-
-.catalogo{
-    margin: 20px auto;
-    width: 80%;
-}
-
-.catalogo h2{
-    padding: 40px 0;
 }
